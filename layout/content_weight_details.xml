@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_weight_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="leggettm.workoutlog.WeightDetailsActivity"
+    tools:showIn="@layout/activity_weight_details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/lblWeighInDetails"
+        android:text="@string/weigh_in_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:fontFamily="casual"/>
+
+    <TextView
+        android:id="@+id/lblTheDate"
+        android:text="@string/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblWeighInDetails"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/lblDateOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblTheDate"
+        android:layout_alignBaseline="@+id/lblTheDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="75sp"
+        android:layout_marginEnd="75sp"
+        android:textSize="19sp"
+        tools:text="Feb 15th" />
+
+    <TextView
+        android:id="@+id/lblWeightIn"
+        android:text="@string/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_below="@+id/lblTheDate"
+        android:layout_marginTop="25dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/lblWeightOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblWeightIn"
+        android:layout_alignBaseline="@+id/lblWeightIn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="75sp"
+        android:layout_marginEnd="75sp"
+        android:textSize="19sp"
+        tools:text="200" />
+
+    <TextView
+        android:id="@+id/lblBmiLabel"
+        android:text="@string/bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblWeightIn"
+        android:layout_alignLeft="@+id/lblWeightIn"
+        android:layout_alignStart="@+id/lblWeightIn"
+        android:layout_marginTop="25dp"
+        android:textSize="19sp" />
+
+
+    <TextView
+        android:id="@+id/lblBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblWeightOut"
+        android:layout_alignLeft="@id/lblWeightOut"
+        android:layout_alignStart="@id/lblWeightOut"
+        android:layout_alignBottom="@+id/lblBmiLabel"
+        android:layout_alignBaseline="@+id/lblBmiLabel"
+        android:textSize="19sp"
+        tools:text="33.2" />
+
+    <TextView
+        android:id="@+id/lblBP"
+        android:text="@string/blood_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblBmiLabel"
+        android:layout_alignLeft="@+id/lblBmiLabel"
+        android:layout_alignStart="@+id/lblBmiLabel"
+        android:layout_marginTop="25dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/lblBlood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblBmi"
+        android:layout_alignLeft="@id/lblBmi"
+        android:layout_alignStart="@id/lblBmi"
+        android:layout_alignBottom="@+id/lblBP"
+        android:layout_alignBaseline="@+id/lblBP"
+        android:textSize="19sp"
+        tools:text="120/88" />
+
+    <Button
+        android:id="@+id/btnEditWeight"
+        android:text="@string/edit_weigh_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblBlood"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="editWeightOnClick" />
+
+    <Button
+        android:id="@+id/btnDeleteWeight"
+        android:text="@string/delete_weigh_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEditWeight"
+        android:onClick="deleteWeightOnClick" />
+
+</RelativeLayout>
+</ScrollView>
