@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Long tedious conversions from digits to string name or vice versa
+ * to convert data into sorted and displayed values
  */
 class Year {
     private List<String> jan;
