@@ -9,7 +9,7 @@ Android work out log, tracking changes in weight, BP, BMI, and workout progress
 
 <img src="images/and3.PNG" alt="Graphed Changes" />
 
-<img src="images/and5.PNG" alt="Workout View" />
+<img src="images/and4.PNG" alt="Workout View" />
 
 
 # Authors
